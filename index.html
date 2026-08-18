@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mohammed Kaab Sayeed | Data Analyst</title>
+
+    <meta name="description"
+          content="Mohammed Kaab Sayeed - Data Analyst Portfolio">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 8%;
+            background: rgba(15, 23, 42, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero {
+            max-width: 900px;
+        }
+
+        .profile-pic {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h3 {
+            color: #94a3b8;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .skill h3 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>Kaab.</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home">
+
+        <div class="hero">
+
+            <!-- Put your photo in the same folder as index.html -->
+            <img
+                src="DOCUMENTS/kaab.jpg"
+                alt="Mohammed Kaab Sayeed"
+                class="profile-pic"
+            >
+
+            <h1>
+                Hi, I'm <span>Mohammed Kaab Sayeed</span>
+            </h1>
+
+            <h3>Data Analyst</h3>
+
+            <p>
+                I transform data into meaningful insights and help businesses
+                make better decisions through data analysis, visualization,
+                and problem solving.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
+
+        <div class="about">
+
+            <p>
+                I'm Mohammed Kaab Sayeed, a passionate Data Analyst interested
+                in turning raw data into actionable insights.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy working with data, discovering patterns, creating
+                dashboards, and presenting insights in a simple and
+                understandable way.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2 class="section-title">
+            My <span>Skills</span>
+        </h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Pandas, NumPy, Data Analysis</p>
+            </div>
+
+            <div class="skill">
+                <h3>SQL</h3>
+                <p>Queries, Joins, Aggregations</p>
+            </div>
+
+            <div class="skill">
+                <h3>Excel</h3>
+                <p>Pivot Tables, Functions, Analysis</p>
+            </div>
+
+            <div class="skill">
+                <h3>Power BI</h3>
+                <p>Dashboards & Data Visualization</p>
+            </div>
+
+            <div class="skill">
+                <h3>Data Visualization</h3>
+                <p>Charts, Reports & Dashboards</p>
+            </div>
+
+            <div class="skill">
+                <h3>Statistics</h3>
+                <p>Data Interpretation & Insights</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2 class="section-title">
+            My <span>Projects</span>
+        </h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>Sales Dashboard</h3>
+
+                <p>
+                    An interactive dashboard analyzing sales performance,
+                    revenue, products, and regional trends.
+                </p>
+
+                <a href="#" class="btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Customer Analysis</h3>
+
+                <p>
+                    Analyzed customer data to identify purchasing patterns,
+                    customer segments, and business opportunities.
+                </p>
+
+                <a href="#" class="btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Data Analysis with Python</h3>
+
+                <p>
+                    Used Python and Pandas to clean, analyze, and visualize
+                    real-world datasets.
+                </p>
+
+                <a href="#" class="btn">
+                    View Project
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact <span>Me</span>
+        </h2>
+
+        <div class="contact">
+
+            <p>
+                Interested in working together?
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:YOUR_EMAIL@gmail.com">
+                    YOUR_EMAIL@gmail.com
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="YOUR_LINKEDIN_LINK" target="_blank">
+                    LinkedIn Profile
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="YOUR_GITHUB_LINK" target="_blank">
+                    GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Mohammed Kaab Sayeed. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
